@@ -1,0 +1,28 @@
+<h2>Item List</h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <thead>
+        <tr *ngFor="let item of items">
+            <td>{{item.id}}</td>
+            <td>{{item.code}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.status}}</td>
+            <td>
+                <button (click)="updateItem(item.id ?? '')">Update</button>
+                <button (click)="deleteItem(item.id ?? '')">Delete</button>
+                <button (click)="itemDetails(item.id ?? '')">View</button>
+            </td>
+        </tr>
+    </thead>
+</table>
+
