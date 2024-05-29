@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
-  styleUrl: './item-list.component.css'
+  styleUrls: ['./item-list.component.css']  // Corrected here
 })
 
 export class ItemListComponent implements OnInit {
