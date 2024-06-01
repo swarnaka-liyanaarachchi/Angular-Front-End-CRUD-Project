@@ -10,6 +10,11 @@ import { CreateItemComponent } from './create-item/create-item.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateItemComponent } from './update-item/update-item.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { InventoryListComponent } from './inventory-list/inventory-list.component';
+import { CreateInventoryComponent } from './create-inventory/create-inventory.component';
+import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +23,11 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
     CreateItemComponent,
     UpdateItemComponent,
     ItemDetailsComponent,
+    InventoryListComponent,
+    CreateInventoryComponent,
+    UpdateInventoryComponent,
+    LoginComponent,
+    RegisterComponent,
 
   ],
   imports: [

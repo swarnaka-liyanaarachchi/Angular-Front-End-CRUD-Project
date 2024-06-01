@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update inventory</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Purchase Price</label>
+            <input type="text" class="form-control" id="purchasePrice"
+                [(ngModel)]="inventory.purchasePrice" name="purchasePrice">
+        </div>
+        <div class="form-group">
+            <label>Sales Price</label>
+            <input type="text" class="form-control" id="salesPrice"
+                [(ngModel)]="inventory.salesPrice" name="salesPrice">
+        </div>
+        <div class="form-group">
+            <label>Bacth Number</label>
+            <input type="text" class="form-control" id="batchNumber"
+                [(ngModel)]="inventory.batchNumber" name="batchNumber">
+        </div>
+        <div class="form-group">
+            <label>Expiry Date</label>
+            <input type="text" class="form-control" id="expiryDate"
+                [(ngModel)]="inventory.expiryDate" name="expiryDate">
+        </div>
+        <div class="form-group">
+            <label>Stock</label>
+            <input type="text" class="form-control" id="stock"
+                [(ngModel)]="inventory.stock" name="stock">
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>

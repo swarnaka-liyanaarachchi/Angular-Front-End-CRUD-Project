@@ -39,4 +39,13 @@ export class ItemListComponent implements OnInit {
       this.getItems();
     } )
   }
+
+  viewInventory(itemId: string) {
+    this.router.navigate(['inventory', itemId]);
+  }
+
+  navigateToAddItem() {
+    this.router.navigate(['create-item']);
+  }
+
 }

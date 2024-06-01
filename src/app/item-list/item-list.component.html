@@ -1,5 +1,8 @@
 <h2>Item List</h2>
-<table class="table table-striped"> <!-- Corrected 'stripped' to 'striped' -->
+<div class="mb-3">
+    <button class="btn btn-success" (click)="navigateToAddItem()">Add Item</button>
+  </div>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>id</th>
@@ -10,7 +13,7 @@
             <th>Actions</th>
         </tr>
     </thead>
-    <tbody> <!-- Use tbody for the rows containing the data -->
+    <tbody> 
         <tr *ngFor="let item of items">
             <td>{{item.id}}</td>
             <td>{{item.code}}</td>
@@ -18,9 +21,10 @@
             <td>{{item.category}}</td>
             <td>{{item.status}}</td>
             <td>
-                <button class="btn btn-primary btn-sm mr-2 mb-2" (click)="updateItem(item.id ?? '')">Update</button>
-                <button class="btn btn-danger btn-sm mr-2 mb-2" (click)="deleteItem(item.id ?? '')">Delete</button>
                 <button class="btn btn-info btn-sm mb-2" (click)="itemDetails(item.id ?? '')">View</button>
+                <button class="btn btn-primary btn-sm mr-2 mb-2" (click)="updateItem(item.id ?? '')"style="margin-left: 10px">Update</button>
+                <button class="btn btn-danger btn-sm mr-2 mb-2" (click)="deleteItem(item.id ?? '')" style="margin-left: 10px">Delete</button>
+                <button class="btn btn-primary btn-sm mb-2" (click)="viewInventory(item.id ?? '')"style="margin-left: 10px">Inventory</button>
             </td>
         </tr>
     </tbody>
