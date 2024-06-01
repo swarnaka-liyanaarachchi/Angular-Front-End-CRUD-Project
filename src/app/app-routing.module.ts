@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'inventory/:itemId', component: InventoryListComponent },
   { path: 'create-inventory/:itemId', component: CreateInventoryComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
+  
 ];
 
 @NgModule({

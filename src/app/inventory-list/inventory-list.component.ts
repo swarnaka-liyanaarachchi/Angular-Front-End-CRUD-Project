@@ -62,6 +62,10 @@ export class InventoryListComponent {
     this.router.navigate(['create-inventory', this.itemId]);
   }
 
+  goToItemList() {
+    this.router.navigate(['/items']); // Navigate to the Item List page
+  }
+
   
 
 }
