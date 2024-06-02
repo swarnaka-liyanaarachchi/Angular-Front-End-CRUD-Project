@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'CRUD APIs for item collection & inventory collection';
+  title = 'CRUD APIs For Item Collection & Inventory Collection';
 }

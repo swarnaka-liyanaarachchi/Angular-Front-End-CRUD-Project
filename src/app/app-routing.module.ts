@@ -9,11 +9,12 @@ import { CreateInventoryComponent } from './create-inventory/create-inventory.co
 import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
   {path: 'items', component: ItemListComponent},
   {path: 'create-item', component: CreateItemComponent },
-  // {path: '', redirectTo: 'items', pathMatch: 'full'},
   {path: 'update-item/:id', component: UpdateItemComponent},
   {path: 'item-details/:id', component: ItemDetailsComponent},
   {path: 'inventory', component: InventoryListComponent},
@@ -24,6 +25,9 @@ const routes: Routes = [
   { path: 'create-inventory/:itemId', component: CreateInventoryComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: '/home' }
   
 ];
 

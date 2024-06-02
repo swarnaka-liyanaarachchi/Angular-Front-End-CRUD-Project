@@ -15,6 +15,7 @@ import { CreateInventoryComponent } from './create-inventory/create-inventory.co
 import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RegisterComponent } from './register/register.component';
     UpdateInventoryComponent,
     LoginComponent,
     RegisterComponent,
+    HomeComponent,
 
   ],
   imports: [
