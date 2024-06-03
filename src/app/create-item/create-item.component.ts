@@ -18,10 +18,7 @@ export class CreateItemComponent {
 
   saveItem(){
     this.itemService.createItem(this.item).subscribe(data => {
-      console.log(data);
-      this.goToItemList();
-    },
-  error => console.log(error)); 
+      console.log(data);this.goToItemList();},error => console.log(error)); 
   }
 
   goToItemList(){
@@ -34,3 +31,5 @@ export class CreateItemComponent {
   }
 
 }
+
+

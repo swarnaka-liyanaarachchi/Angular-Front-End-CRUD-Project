@@ -36,16 +36,6 @@ export class InventoryListComponent {
     }
   }
 
-  // ngOnInit(): void{
-  //   this.getInventory();
-  // }
-
-  // private getInventory(){
-  //   this.inventoryService.getInventoryList().subscribe(data => {
-  //     this.inventories = data;
-  //   });
-  // }
-
 
   updateInventory(id: string){
     this.router.navigate(['update-inventory', id]);
@@ -64,6 +54,14 @@ export class InventoryListComponent {
 
   goToItemList() {
     this.router.navigate(['/items']); // Navigate to the Item List page
+  }
+
+  navigateToHome() {
+    this.router.navigate(['home']);
+  }
+
+  inventoryDetails(id: string){
+    this.router.navigate(['inventory-details', id]);
   }
 
   

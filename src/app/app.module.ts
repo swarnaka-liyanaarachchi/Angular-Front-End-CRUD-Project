@@ -16,6 +16,7 @@ import { UpdateInventoryComponent } from './update-inventory/update-inventory.co
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { InventoryDetailsComponent } from './inventory-details/inventory-details.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
+    InventoryDetailsComponent,
 
   ],
   imports: [

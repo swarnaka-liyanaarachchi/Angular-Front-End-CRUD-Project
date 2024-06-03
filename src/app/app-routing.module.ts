@@ -10,6 +10,8 @@ import { UpdateInventoryComponent } from './update-inventory/update-inventory.co
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { InventoryDetailsComponent } from './inventory-details/inventory-details.component'; // Import this component
+
 
 
 const routes: Routes = [
@@ -27,7 +29,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: 'inventory-details/:id', component: InventoryDetailsComponent }
+  // { path: '**', redirectTo: '/home' }
   
 ];
 

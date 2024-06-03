@@ -29,9 +29,14 @@
             <td>{{inventory.expiryDate}}</td>
             <td>{{inventory.stock}}</td>
             <td>
-                <button (click)="updateInventory(inventory.id ?? '')" class="btn btn-info">Update</button>
+                <button (click)="inventoryDetails(inventory.id ?? '')" class="btn btn-info" style="margin-left: 10px">View</button>
+                <button (click)="updateInventory(inventory.id ?? '')" class="btn btn-primary" style="margin-left: 10px">Update</button>
                 <button (click)="deleteInventory(inventory.id ?? '')" class="btn btn-danger" style="margin-left: 10px">Delete</button>
             </td>
         </tr>
     </tbody>
 </table>
+
+<div class="mb-3">
+    <button class="btn btn-primary btn-sm mb-2" (click)="navigateToHome()">Log Out</button>
+</div>

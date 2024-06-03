@@ -48,4 +48,8 @@ export class ItemListComponent implements OnInit {
     this.router.navigate(['create-item']);
   }
 
+  navigateToHome() {
+    this.router.navigate(['home']);
+  }
+
 }
